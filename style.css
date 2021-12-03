@@ -1,0 +1,163 @@
+/*========== General =======*/
+
+:root {
+    --main-background-color: rgb(235, 240, 235);
+    --subtitle-color: rgb(65, 51, 97);
+    --accent-color-1: rgb(118, 57, 175);
+    --accent-color-2: rgb(234, 0, 255);
+    --accent-gradient: linear-gradient(to right, var(--accent-color-1) 0%, var(--accent-color-2) 100%);
+    --heading-text-color: rgb(49, 37, 78);
+    --label-text-color: rgb(112, 106, 106);
+    --body-text-color: rgb(74, 71, 75);
+    --light-text-color: rgb(187, 190, 187);
+    --shadow-color: rgba(59, 37, 139, 0.329);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ========== Container ============ */
+
+body {
+    background-color: var(--main-background-color);
+    width: fit-content;
+    background-image: url(img/background-image.svg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+
+/*========== Header =============*/
+
+header {
+    font-size: 20px;
+    /* background-color: white; */
+    width: 100vw;
+    /* padding: 0; */
+    margin-bottom: 2em;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#titleBeginning {
+    font-family: 'Dosis', sans-serif;
+    margin-right: -0.04em;
+    color: var(--accent-color-1);
+}
+
+#titleEnd {
+    padding-top: 3px;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: -0.04em;
+    color: var(--heading-text-color);
+}
+
+h4 {
+    color: var(--subtitle-color);
+    font-size: 16px;
+    text-align: center;
+}
+
+#panel-button {
+    position: absolute;
+    margin: 1.6em;
+    right: 0;
+    top: 0;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+}
+
+
+/* ====== Body ====== */
+
+h2 {
+    color: var(--heading-text-color);
+    text-align: center;
+    font-size: 14px;
+    color: var(--accent-color-1);
+}
+
+h3 {
+    color: var(--label-text-color);
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    color: var(--body-text-color);
+    line-height: 1.8em;
+    padding: 1em;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+button {
+    border-radius: 12px;
+    /* font-weight: bold; */
+    padding: 0.4rem 1rem;
+    border: 3px solid var(--accent-color-1);
+    box-shadow: 0px 0px 14px 2px var(--shadow-color);
+}
+
+.gradient-text {
+    background: -webkit-linear-gradient(to right, var(--accent-color-1) 0%, var(--accent-color-2) 100%);
+    background: -moz-linear-gradient(to right, var(--accent-color-1) 0%, (var(--accent-color-2)) 100%);
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#tracker-list {
+    box-shadow: inset 0px 0px 10px -5px var(--shadow-color);
+    border-radius: 6px;
+    padding: 1px 4px;
+}
+
+#tracker-list li {
+    list-style: none;
+    list-style-type: none;
+    width: 100%;
+    box-shadow: 0px 1px 4px -1px var(--shadow-color);
+    border-radius: 6px;
+    padding: 0.2em 0.4em;
+    margin: 6px 0;
+}
+
+#footer-link {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color-1);
+}
+
+footer {
+    color: var(--light-text-color);
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 2rem;
+}
