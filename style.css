@@ -204,6 +204,7 @@ footer {
 }
 
 #video {
-    margin: 3rem auto;
-    margin-top: 3rem;
+    padding-top: 32px;
+    margin: 2rem auto;
+    margin-top: 2rem;
 }
