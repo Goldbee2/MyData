@@ -132,6 +132,15 @@ button {
     box-shadow: 0px 0px 14px 2px var(--shadow-color);
 }
 
+.button {
+    border-radius: 12px;
+    /* font-weight: bold; */
+    padding: 0.4rem 1rem;
+    border: 3px solid var(--accent-color-1);
+    box-shadow: 0px 0px 14px 2px var(--shadow-color);
+    margin: 1rem 2rem;
+}
+
 .gradient-text {
     background: -webkit-linear-gradient(to right, var(--accent-color-1) 0%, var(--accent-color-2) 100%);
     background: -moz-linear-gradient(to right, var(--accent-color-1) 0%, (var(--accent-color-2)) 100%);
